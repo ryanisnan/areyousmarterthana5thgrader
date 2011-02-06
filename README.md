@@ -1,6 +1,9 @@
 # Description #
 areyousmarterthana5thgrader is a simple django app that enables you to use arithmetic-based captcha elements on any django form template. The numbers it has the user adding/subtracting are single digits, hence the name "Are you smarter than a 5th grader". It's simple for a reason.
 
+It produces output similar to that below:
+![screenshot](http://www.ryanwest.info/public/apps/files/uploads/ayst5g_ss1.png)
+
 # Disclaimer #
 areyousmarterthana5thgrader (henceforth called "app", because the name is TL;DR) is very simple, and should only really be used to prevent non-targeted, low sophistication attacks - typically from things like crawling spambots. The app does use some obfuscation techniques to try and throw off any crawlers.
 
