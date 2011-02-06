@@ -1,0 +1,4 @@
+<input type="hidden" name="captcha_answer" value="{{ captcha_answer }}" />
+<label for="captcha_answer_input">What is {{ captcha_operand1 }} <em>{{ captcha_operator }}</em> <span>{{ captcha_operand2 }}</span>? (spam protection)</label>
+{% if captcha_answer_errors %}{% autoescape off %}{{ captcha_answer_errors }}{% endautoescape %}{% endif %}
+<input id="captcha_answer_input" name="captcha_answer_input" type="text" maxwidth="2" />
