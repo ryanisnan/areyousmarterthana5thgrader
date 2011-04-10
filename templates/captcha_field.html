@@ -1,4 +1,5 @@
 <input type="hidden" name="captcha_answer" value="{{ captcha_answer }}" />
 <label class="required" for="captcha_answer_input">What is {{ captcha_operand1 }} <em>{{ captcha_operator }}</em> <span>{{ captcha_operand2 }}</span>? (spam protection)</label>
+<p class="meta" style="font-size: 0.9em">We are asking you this question to ensure that you are not a bot.</p>
 {% if captcha_answer_errors %}{% autoescape off %}{{ captcha_answer_errors }}{% endautoescape %}{% endif %}
 <input id="captcha_answer_input" name="captcha_answer_input" type="text" maxwidth="2" />
