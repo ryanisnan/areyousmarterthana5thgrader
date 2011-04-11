@@ -2,4 +2,4 @@
 <label class="required" for="captcha_answer_input">What is {{ captcha_operand1 }} <em>{{ captcha_operator }}</em> <span>{{ captcha_operand2 }}</span>?</label>
 <p class="meta">We are asking you this question to ensure that you are not a bot (spam protection).</p>
 {% if captcha_answer_errors %}{% autoescape off %}{{ captcha_answer_errors }}{% endautoescape %}{% endif %}
-<input id="captcha_answer_input" name="captcha_answer_input" type="text" maxwidth="2" />
+<input id="captcha_answer_input" name="captcha_answer_input" type="text" maxlength="2" />
