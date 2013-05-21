@@ -16,5 +16,8 @@ setup(
     author_email='ryanisnan@gmail.com.com',
     url='http://github.com/ryanisnan/areyousmarterthana5thgrader/',
     long_description=open('README.md', 'r').read(),
-    zip_safe=False
+    zip_safe=False,
+    packages=[
+        'areyousmarterthana5thgrader'
+    ]
 )
