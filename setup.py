@@ -19,5 +19,6 @@ setup(
     url='http://github.com/ryanisnan/areyousmarterthana5thgrader/',
     long_description=open('README.md', 'r').read(),
     zip_safe=False,
-    packages=find_packages()
+    packages=find_packages(),
+    include_package_data=True,
 )
