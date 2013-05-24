@@ -7,6 +7,8 @@ except ImportError:
     use_setuptools()
     from setuptools import setup
 
+from setuptools import find_packages
+
 
 setup(
     name='django-areyousmarterthana5thgrader',
@@ -17,7 +19,5 @@ setup(
     url='http://github.com/ryanisnan/areyousmarterthana5thgrader/',
     long_description=open('README.md', 'r').read(),
     zip_safe=False,
-    packages=[
-        'areyousmarterthana5thgrader'
-    ]
+    packages=find_packages()
 )
